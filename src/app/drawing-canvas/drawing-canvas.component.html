@@ -1,0 +1,32 @@
+<!-- <canvas id="canvas"></canvas>
+<div class="nav">
+    <div class="clr" data-clr="#000"></div>
+    <div class="clr" data-clr="red"></div>
+    <button class="clear">Clear</button>
+    <button class="save">Save</button>
+     <input type="color" value="#FFFFFF" id="favcolor">
+     <input type="range" name="ageInputName" value="#FFFFFF" id="ageInputId" value="5"
+     min="1" max="10" oninput="ageOutputId.value = ageInputId.value" >
+    <output id="ageOutputId"></output>
+    <div class="emoji">🎨</div>
+</div> -->
+<canvas #canvas
+        (mousedown)="onMouseDown($event)"
+        (mousemove)="onMouseMove($event)"
+        (mouseup)="onMouseUp()"></canvas>
+<div class="controls">
+    <button (click)="toggleEraser()" class="btn2">Eraser
+      </button>
+  <button (click)="drawEraser()" class="btn3">Draw</button>
+  <button (click)="clearCanvas()" class="btn1">Clear</button>
+  <button onclick = "downloadFile()" class="btn4"> save File </button>
+  <div class="myInput">
+    <label for="color">ColorPicker</label>
+    <input type="color" (input)="onColorChange($event)" />
+    <span class="fill-color fw-bold">Red<label (click)="fillColor()"></label></span>
+  
+  </div>
+   
+  </div>
+
+

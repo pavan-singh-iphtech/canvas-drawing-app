@@ -1,0 +1,156 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    width: auto;
+    height: 50px;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+align-items: center;
+justify-content: space-around;
+transition: opacity .5s;
+background-image: linear-gradient(to right, #4568DC, #B06AB3);
+padding: 10px;
+border-radius: 10px;
+border: 3px solid white;
+}
+.clr{
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: transform .5s;
+}
+.clr:hover{
+    transform: scale(1.2);
+}
+.clr:nth-child(1){
+    background-color: black;
+}
+.clr:nth-child(2){
+    background-color: red;
+}
+.clr:nth-child(3){
+    background-color:pink;
+}
+.save{
+    background-color: #0f65d4;
+}
+input [type="color"]{
+    width: 60px;
+    height: 40px;
+}
+#ageOutputId{
+    color: white;
+    font-weight: bold;
+    font-size: 15pt;
+}
+#ageInputId{
+    background-image: linear-gradient(to right, #000428 0%, #004e92 100%);
+    height: 7px;
+    outline: none;
+    cursor: ew-resize;
+    border-radius: 5px;
+    border: 3px solid white;  
+    accent-color: white;  
+}
+.emoji{
+    font-size: 40px;
+    padding-bottom: 10px;
+} */
+canvas {
+    border: 1px solid #000;
+    margin-left: 20px;
+  }
+.controls {
+    margin-top: 10px;
+}
+.btn1{
+    border: 0;
+    padding: 0.7rem 0.9rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: #4681f4;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.btn1:hover{
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+  .btn2{
+    border: 0;
+    padding: 0.7rem 0.9rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: #33b249;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .btn2:hover{
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.5);
+    border-radius: 20px;
+  }
+  .btn3{
+    border: 0;
+    padding: 0.7rem 0.9rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color:#55c2da;
+    cursor: pointer;
+  }
+  .btn3:hover{
+    box-shadow: 0px 1px 8px rgba(0,0,0,0.5);
+    border-radius: 20px;
+  }
+  .btn4{
+    border: 0;
+    padding: 0.7rem 0.9rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color:#044cd0;
+    cursor: pointer;
+  }
+  .btn4:hover{
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  }
+  .myInput{
+    margin: 0rem 0.8rem;
+  }
+  .myInput label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-right: 3px;
+    padding-bottom: 7px;
+  }
+  .myInput input{
+    border: none;
+    width: 70px;
+    height: 35px;
+  }
+  .fill-color{
+    padding: 4px;
+  }
+.fill-color label{
+    height: 20px;
+    width: 30px;
+    background-color: red;
+    cursor: pointer;
+}
