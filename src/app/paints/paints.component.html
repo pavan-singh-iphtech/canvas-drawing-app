@@ -1,0 +1,69 @@
+<div class="main-card">
+<div class="container">
+    <section class="tools-board">
+    <div class="row">
+        <label class="title">
+        Shapes
+        </label>
+        <ul class="options">
+            <li class="option tool" id="rectangle">
+                
+                <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+                <span>Circle</span>
+            </li>
+            <li class="option tool" id="triangle">
+                <span>Triangle</span>
+            </li>
+            <li class="option">
+            <input type="checkbox"id="fill-color" />
+                <label for="fill-color">Fill Color</label>
+            </li>
+        </ul>
+    </div>
+    <div class="row">
+        <label class="title">
+        option
+        </label>
+        <ul class="options">
+            <li class="option active tool" id="brush">
+                <span>Brush</span>
+            </li>
+            <li class="option tool" id="eraser">
+                <span>Eraser</span>
+            </li>
+            <li class="option">
+            <input type="range"id="size-slider " />
+            </li>
+        </ul>
+    </div>
+    <div class="row colors">
+        <label class="title">
+        Color
+        </label>
+        <ul class="options">
+            <li class="option">
+            </li>
+            <li class="option selected">
+            </li>
+            <li class="option">
+            </li>
+            <li class="option">
+            </li>
+            <li class="option">
+                <input type="color" value="#4A98F7" id="color-picker">
+            </li>
+            
+        </ul>
+    </div>
+    <div class="row">
+       <button class="btn btn-primary mb-2 fs-6 fw-bolder" (click)="clearCanvas()">Clear Canvas</button>
+       <button class="btn btn-dark fs-6 fw-bolder" (click)="saveAsImage()">Save as Image</button>
+    </div>
+    </section>
+    <section class="drawing-board">
+        <canvas #canvas></canvas>
+    </section>
+   </div>
+</div>

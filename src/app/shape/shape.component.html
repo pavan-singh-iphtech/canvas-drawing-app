@@ -1,0 +1,9 @@
+<canvas #canvas
+  (mousedown)="onMouseDown($event)"
+  (mousemove)="onMouseMove($event)"
+  (mouseup)="onMouseUp()">
+</canvas>
+<div>
+  <button class="btn btn-primary" (click)="switchToRectangle()">Rectangle</button>
+  <button class="btn btn-dark" (click)="switchToFreeform()">Freeform</button>
+</div>
